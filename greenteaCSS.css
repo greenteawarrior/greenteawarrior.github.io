@@ -28,7 +28,33 @@ ul {
   padding-top:-50px;
 }
 
-h2 {
+/*Font colors!!*/
+
+#greentea {
+  color: #67D65B;
+}
+
+#bluedaydream {
+  color: #07a;  
+}
+
+#seafoam {
+  color: #3ACD8A;
+}
+
+#ponderpurple {
+  color: #5F00AA;
+}
+
+#quorared {
+  color: #a20;
+}
+
+#githubblue{
+  color: #4183c4;
+}
+
+/*h2 {
   font-family: 'Quicksand', serif;
   font-size: 48px;
   text-align: left;
@@ -41,4 +67,4 @@ h3 {
   font-weight: bold;
   text-align: left;
   color: #67D65B;
-}    
+}*/    
