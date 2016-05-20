@@ -1,82 +1,23 @@
-<html>
+---
+layout: default
+---
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<div class="home">
 
-<title>greenteawarrior</title>
-<link rel="stylesheet" href="greenteaCSS.css"></script>
+  <h1 class="page-heading">Posts</h1>
 
-</head>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-<body>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-<div>
-Hello world!
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 </div>
-
-<div>
-Nice to meet you, I am <font id="greentea">Emily Q. Wang</font> - a <font id="bluedaydream">computing conversationalist</font>, <font id="ponderpurple">design thinker</font>, and <font id="seafoam">interdisciplinary hacker</font>. 
-</div>
-
-<div></div>
-<div></div>
-
-<div class="morePersonal">
-To make things more personal... I am 
-</div>
-<ul>
-<li> a <a href="https://github.com/greenteawarrior" font id="githubblue">social coder</a> (Octocat is my bestie),</li>
-<li><font id="greentea">contagiously enthusiastic</font> (a phrase inspired by <a href="http://melchua.com/" font id="bluedaydream">Mel Chua</a>, Olin '07 alum),</li>
-<li>a <font id="greentea">project manager</font> (more collaboration = more better),</li>
-<li>an <font id="greentea">ambidanctrous</font> blues/swing dancer (and maybe even an amateur social dancing DJ),</li>
-<li>a rock <font id="greentea">climb</font>er, and</li>
-<li><font id="greentea">3D print</font>ing amateur.</li>
-<li> Also, <font id="greentea">geektalk</font> is my current favorite hashtag.
-</ul>
-<div>
-Let me know if we have something in common (see contact info at the bottom of this page).
-</div>
-
-<div></div>
-<div></div>
-
-<div>
-I am currently studying abroad in Scotland at the University of Edinburgh's School of Informatics! (a 2015 semester 2 visiting 3rd year student, so to speak)
-</div>
-
-<div>
-Officially, I am a student in the <a href="https://www.olin.edu" font id="olinblue">Olin College of Engineering</a> class of 2016. I am currently declared as an electrical and computer engineer (ECE), but studying abroad has helped me realize my true academic identity as someone who loves the special topics of <font id="greentea">applied computer science</font> (computer graphics, computational robotics, and parallel programming, to name a few adventures), <font id="ponderpurple">design thinking</font> (thanks, Olin!), <font id="greentea">data science</font>, <font id="bluedaydream">project management</font> (I love collaboration! Also, I will bring out both the introvert/extrovert in you as a team member, make the most out of personality clashes with awesome discussions, and help you debug anything, or at least connect you with someone who can!), and <font id="seafoam">rapid prototyping</font> (making stuff! *_*). When I return to campus for my fourth year at Olin, I will certainly be proposing a self-designed engineering major that truly reflects my multidimensional interests and skillset. 
-</div>
-
-<div>
-My GitHub pages are mostly for the sake of documenting my projects in the software world. More deets and links to be included here soon.
-</div>
-
-<div>
-Check out my <a href="http://www.greenteawarrior.wordpress.com" font id="greentea">blog on wordpress</a> to learn more about my perspectives, projects and personality. :)  
-</div>
-
-<div>
-I also like reading and eventually will be publishing things on <font id="quorared">Quora</font>. To be more specific, I'm working on a data visualization book with two of my best friends at Olin College and our blog will be on Quora. (Our GitHub handles are <a href="https://github.com/greenteawarrior" font id="githubblue">@greenteawarrior</a>, <a href="https://github.com/youralien" font id="githubblue">@youralien</a>, and <a href="https://github.com/mbocamazo" font id="githubblue">@mbocamazo</a>, and our works in progress can be found in the <a href ="https://github.com/convincingness" font id="githubblue">convincingness GitHub organization</a>.) 
-We are currently in the process of scoping our project that will commence in Fall 2015; stay tuned (by revisiting this page or following us on GitHub, I suppose) for more updates!
-</div>
-
-<div>
-Since I like to 3D print things, I also like exploring thingiverse. Currently I don't have anything on <a href="http://www.thingiverse.com/greenteawarrior/about" font id="thingiverseblue">my thingiverse profile</a> (so yes, I suppose you could say that I'm both a Quora and thingiverse lurker at the moment...), but will eventually add some of my own spiffy stuff. I would also very much like to see your spiffy stuff if you prototype things in the physical world!
-</div>
-
-<div>
-Questions/comments/concerns/compliments? ;)
-I love mail! Contact me via email (emily.wang@students.olin.edu), <a href="https://twitter.com/greenteawarrior">twitter</a>, or <a href="https://www.linkedin.com/in/emilyqw">LinkedIn</a>, and I will respond to you ASAP.
-</div>
-
-<div>
-Thanks!<font id="greentea"><3</font> 
-</div>
-
-<div>
---<font id="greentea">@greenteawarrior</font>
-</div>
-
-</body>
-
-</html>
