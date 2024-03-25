@@ -2640,20 +2640,21 @@ input, select, textarea {
 
 		.features article .image {
 			display: inline-block;
-			/* padding-right: 2.5em; */
+			padding-right: 2.5em;
 			vertical-align: middle;
-			width: 48%;
+			width: 35%;
 		}
 
 			.features article .image img {
 				display: block;
-				width: 100%;
+				/* float: right; */
+				/* width: 40%; */
 			}
 
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
+			width: 60%;
 		}
 
 			.features article .inner > :last-child {
